@@ -204,7 +204,6 @@
 
     <script>
         // ■■ Configuración ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-        // Reemplaza TU_TOKEN_AQUI con tu PAT.
         const TOKEN = 'TU_TOKEN_AQUI'; // ← REVISA QUE ESTE TOKEN SEA VÁLIDO
 
         
@@ -262,7 +261,6 @@
                 mostrarTarjeta(data);
 
             } catch (error) {
-                // Si entra aquí, es probable que no haya internet o el token rompa la petición.
                 mostrarCargando(false);
                 btn.disabled = false;
                 mostrarError('Error de red o conexión. Revisa tu token o tu internet.');
